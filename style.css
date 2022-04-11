@@ -1,0 +1,71 @@
+body,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("https://media.istockphoto.com/vectors/autumn-halloween-background-with-pumpkins-and-scary-faces-grimaces-vector-id1172668518?k=20&m=1172668518&s=170667a&w=0&h=L8vPWHGqUzIrwOA7pNW-5PCQUpOqgSRQ9_7AJs34HOc=")
+    no-repeat center/cover;
+}
+
+li {
+  list-style-type: none;
+}
+
+.bucket-list-header {
+  position: relative;
+}
+
+.bucket-list-header h2 {
+  color: orangered;
+  padding-left: 25px;
+  margin: 20px 0;
+}
+
+.bucket-list-header h2::after {
+  content: "";
+  width: 7px;
+  height: 25px;
+  background-color: orangered;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.wrapper {
+  width: 400px;
+  margin: 150px auto;
+}
+
+.bucket-list {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0px 10px 1px rgb(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.list {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.list li {
+  background: white url("/images/icon-close.png") left center no-repeat;
+  margin: 15px;
+  padding: 10px 0;
+  padding-left: 40px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  color: gray;
+  transition: all 0.3s;
+  cursor: pointer;
+  background-size: 30px;
+}
+
+.list li:hover {
+  border-color: orangered;
+  color: orangered;
+  background-image: url("/images/icon-open.png");
+}
